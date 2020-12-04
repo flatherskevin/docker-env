@@ -33,4 +33,9 @@ RUN pip3 install virtualenv
 # AWS CLI
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
 
+RUN yum install -y dos2unix
+RUN dos2unix /root/.zshrc
+RUN dos2unix /root/.vimrc
+RUN dos2unix /root/.oh-my-zsh/custom/themes/flathers.zsh-theme
+
 CMD [ "zsh" ]
