@@ -34,6 +34,6 @@ RUN pip3 install virtualenv
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
 
 RUN yum install -y dos2unix
-RUN find /root/ -type f | xargs -0 dos2unix
+RUN find /root/ -print0| xargs -0 dos2unix
 
 CMD [ "zsh" ]
