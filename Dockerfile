@@ -9,7 +9,7 @@ RUN yum install -y unzip
 # Git
 RUN yum install -y git
 RUN mkdir /root/codebase
-RUN git clone https://github.com/flatherskevin/docker-env.git /root/codebase
+RUN git clone https://github.com/flatherskevin/docker-env.git /root/codebase/docker-env
 
 # zsh
 RUN yum install -y zsh
@@ -28,7 +28,6 @@ RUN mkdir /root/.vim/tmp
 # Python
 RUN yum install -y python3
 RUN pip3 install virtualenv
-
 
 # AWS CLI
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
