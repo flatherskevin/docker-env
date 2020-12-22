@@ -33,6 +33,9 @@ alias gitac="git add . && git commit -m"
 alias gitmp="git checkout master && git pull"
 alias gitpu="git branch --show-current | xargs -I {} git push -u origin {}"
 alias gitb="git checkout -b"
+alias gitlog="git log --oneline"
+alias gitrim="gitmp && git checkout - && git rebase master"
+alias gitsrim="git stash && gitmp && git checkout - && git rebase master && git stash pop"
 
 # Python
 alias pyenv="source venv/bin/activate"
