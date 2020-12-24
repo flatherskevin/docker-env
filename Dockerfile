@@ -31,7 +31,7 @@ RUN pip3 install virtualenv
 
 # Terraform
 RUN git clone https://github.com/tfutils/tfenv.git /root/.tfenv
-RUN export PATH="$HOME/.tfenv/bin:$PATH"
+RUN export PATH="/root/.tfenv/bin:$PATH"
 RUN tfenv install latest
 RUN tfenv install latest:^0.13
 RUN tfenv install latest:^0.14
