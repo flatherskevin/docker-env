@@ -29,6 +29,12 @@ RUN mkdir /root/.vim/tmp
 RUN yum install -y python3
 RUN pip3 install virtualenv
 
+# Terraform
+yum install -y tfenv
+tfenv install latest
+tfenv install latest:^0.13
+tfenv install latest:^0.14
+
 # AWS CLI
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
 
