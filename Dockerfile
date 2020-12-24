@@ -34,7 +34,7 @@ RUN git clone https://github.com/tfutils/tfenv.git /root/.tfenv
 RUN /root/.tfenv/bin/tfenv install latest
 RUN /root/.tfenv/bin/tfenv install latest:^0.13
 RUN /root/.tfenv/bin/tfenv install latest:^0.14
-RUN /root/.tfenv/bin/tfenv use lastest:^0.13
+RUN /root/.tfenv/bin/tfenv use latest:^0.13
 
 # AWS CLI
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
