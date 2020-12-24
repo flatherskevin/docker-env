@@ -31,11 +31,11 @@ RUN pip3 install virtualenv
 
 # Terraform
 RUN git clone https://github.com/tfutils/tfenv.git /root/.tfenv
-RUN export PATH="/root/.tfenv/bin:$PATH"
-RUN tfenv install latest
-RUN tfenv install latest:^0.13
-RUN tfenv install latest:^0.14
-RUN tfenv use lastest:^0.13
+# RUN export PATH="/root/.tfenv/bin:$PATH"
+# RUN tfenv install latest
+# RUN tfenv install latest:^0.13
+# RUN tfenv install latest:^0.14
+# RUN tfenv use lastest:^0.13
 
 # AWS CLI
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
