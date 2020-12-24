@@ -30,7 +30,7 @@ RUN yum install -y python3
 RUN pip3 install virtualenv
 
 # Terraform
-RUN yum install -y tfenv
+RUN git clone https://github.com/tfutils/tfenv.git /root/.tfenv
 RUN tfenv install latest
 RUN tfenv install latest:^0.13
 RUN tfenv install latest:^0.14
