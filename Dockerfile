@@ -34,6 +34,7 @@ yum install -y tfenv
 tfenv install latest
 tfenv install latest:^0.13
 tfenv install latest:^0.14
+tfenv use lastest:^0.13
 
 # AWS CLI
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && unzip awscliv2.zip && ./aws/install
