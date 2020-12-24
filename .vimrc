@@ -8,6 +8,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'robbyrussell/oh-my-zsh'
+Plugin 'hashivim/vim-terraform'
 call vundle#end() 
 filetype plugin indent on
 
