@@ -16,5 +16,3 @@ filetype plugin indent on
 set backupdir=~/.vim/tmp//,.
 set directory=~/.vim/tmp//,.
 set tabstop=4
-
-colorscheme
